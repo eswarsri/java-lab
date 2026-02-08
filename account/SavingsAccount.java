@@ -47,4 +47,5 @@ public class SavingsAccount extends Account implements IAccounting {
         balance += interest;
         System.out.println("Interest applied: " + interest + ". New Balance: " + balance);
     }
+
 }

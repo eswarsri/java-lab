@@ -8,6 +8,12 @@ public abstract class Account {
     protected String branch;
     protected String securityQuestion;
 
+    public Account(String accountNumber, String accountHolder, double initialBalance) {
+        this.accountNumber = accountNumber;
+        this.accountHolder = accountHolder;
+        this.balance = initialBalance;
+    }
+
     public Account(String accountNumber, String accountHolder, double initialBalance, int age, String branch, String question) {
         this.accountNumber = accountNumber;
         this.accountHolder = accountHolder;
@@ -34,6 +40,18 @@ public abstract class Account {
 
     public int getAge() {
         return age;
+    }
+
+    public void setAge(int age){
+        this.age = age;
+    }
+
+    public void setBranch(String branch){
+        this.branch = branch;
+    }
+
+    public String getBranch() {
+        return branch;
     }
 
     @Override
