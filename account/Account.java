@@ -46,6 +46,10 @@ public abstract class Account {
         this.age = age;
     }
 
+    public void setQuestion(String securityQuestion){
+        this.securityQuestion = securityQuestion;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
