@@ -46,6 +46,12 @@ public abstract class Account {
         this.age = age;
     }
 
+    public void setBranch(String branch){
+        this.branch = branch;
+    }
+
+    public String getBranch() {
+        return branch;
     public void setQuestion(String securityQuestion){
         this.securityQuestion = securityQuestion;
     }
