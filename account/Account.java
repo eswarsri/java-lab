@@ -28,6 +28,10 @@ public abstract class Account {
         return accountNumber;
     }
 
+    public int getAge() {
+        return age;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
