@@ -46,6 +46,14 @@ public abstract class Account {
         this.age = age;
     }
 
+    public void setBranch(String branch){
+        this.branch = branch;
+    }
+
+    public String getBranch() {
+        return branch;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
