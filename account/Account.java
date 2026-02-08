@@ -52,6 +52,9 @@ public abstract class Account {
 
     public String getBranch() {
         return branch;
+
+    }
+    
     public void setQuestion(String securityQuestion){
         this.securityQuestion = securityQuestion;
     }
