@@ -5,12 +5,14 @@ public abstract class Account {
     protected double balance;
     protected String accountHolder;
     protected int age;
+    protected String securityQuestion;
 
-    public Account(String accountNumber, String accountHolder, double initialBalance, int age) {
+    public Account(String accountNumber, String accountHolder, double initialBalance, int age, String question) {
         this.accountNumber = accountNumber;
         this.accountHolder = accountHolder;
         this.balance = initialBalance;
         this.age= age;
+        this.securityQuestion= question;
     }
 
     public abstract void deposit(double amount);
