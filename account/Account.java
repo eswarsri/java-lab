@@ -8,6 +8,12 @@ public abstract class Account {
     protected String branch;
     protected String securityQuestion;
 
+    public Account(String accountNumber, String accountHolder, double initialBalance) {
+        this.accountNumber = accountNumber;
+        this.accountHolder = accountHolder;
+        this.balance = initialBalance;
+    }
+
     public Account(String accountNumber, String accountHolder, double initialBalance, int age, String branch, String question) {
         this.accountNumber = accountNumber;
         this.accountHolder = accountHolder;
